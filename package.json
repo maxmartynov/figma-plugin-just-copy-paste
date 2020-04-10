@@ -1,0 +1,33 @@
+{
+  "name": "figma-plugin-just-copy-paste",
+  "version": "0.0.1",
+  "description": "A Figma plugin that pastes layers at exactly the same position, no matter what layer is selected.",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "watch": "./node_modules/.bin/tsc --project tsconfig.json --watch src/*.js",
+    "minify": "./node_modules/.bin/webpack --config webpack.config.js",
+    "build": "./node_modules/.bin/tsc --build tsconfig.json && npm run minify"
+  },
+  "keywords": [
+    "figma",
+    "plugin",
+    "copy",
+    "paste"
+  ],
+  "author": "Max Martynov <martynov.max.s@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagtalon/figma-fast-copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jagtalon/figma-fast-copy/issues"
+  },
+  "homepage": "https://github.com/jagtalon/figma-fast-copy#readme",
+  "devDependencies": {
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

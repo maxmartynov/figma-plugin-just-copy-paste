@@ -1,15 +1,11 @@
 console.log('figma-plugin-smart-copy-paste: start')
 
 let selectedItems = figma.currentPage.selection
-let root = figma.root;
+let root = figma.root
 
 if (selectedItems.length === 0) {
   figma.closePlugin('No object selected.')
 }
-
-// if (figma.command === 'cut') {
-//   smartCut()
-// }
 
 if (figma.command === 'copy') {
   smartCopy()
@@ -18,18 +14,6 @@ if (figma.command === 'copy') {
 if (figma.command === 'paste') {
   smartPaste()
 }
-
-// function smartCut () {
-//   const ids = selectedItems.map((item: any) => item.id)
-//   root.setPluginData('clipboardAction', 'cut')
-//   root.setPluginData('clipboardItemsIds', ids.join('|'))
-
-//   for (let item of selectedItems as any) {
-//     item.visible = false
-//   }
-
-//   figma.closePlugin('Cut')
-// }
 
 function smartCopy () {
   const ids = selectedItems.map((item: any) => item.id)
@@ -138,7 +122,6 @@ function getPositionRelativeToNode (source, target): Point {
     point.x += _target.x || 0
     point.y += _target.y || 0
   }
-
 
   return point
 }
