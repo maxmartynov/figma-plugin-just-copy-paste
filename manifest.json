@@ -1,0 +1,10 @@
+{
+  "name": "figma-plugin-smart-copy-paste",
+  "id": "829730341638670259",
+  "api": "1.0.0",
+  "main": "code.js",
+  "menu": [
+    {"name": "Smart Copy", "command": "copy"},
+    {"name": "Smart Paste", "command": "paste"}
+  ]
+}
