@@ -18,7 +18,7 @@ we will be able to get the plugin work like a charm soon.*
 
 Just use this plugin as you usually do when copy & paste layers, but with the
 use the plugin's commands `Just Copy` and `Just Paste` from the menu or via
-[recommend shortcuts](#recommend-shortcuts-macos).
+[recommended shortcuts](#recommended-shortcuts-macos).
 
 For example:
 1. Select one or more layers on the canvas
@@ -36,7 +36,7 @@ layers are selected.
 [<br><img src="img/demo.gif" width="200"/>](img/demo.gif)
 
 
-### Recommend shortcuts (MacOS)
+### Recommended shortcuts (MacOS)
 
 I recommend you the following ones:
 - **Copy:** `⌃⌘C` (Control + Command + C)
