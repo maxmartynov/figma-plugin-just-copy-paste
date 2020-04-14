@@ -15,7 +15,10 @@
     "figma",
     "plugin",
     "copy",
-    "paste"
+    "paste",
+    "layer",
+    "position",
+    "coordinates"
   ],
   "author": "Max Martynov <martynov.max.s@gmail.com>",
   "license": "MIT",
