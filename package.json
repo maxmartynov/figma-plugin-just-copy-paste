@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jagtalon/figma-fast-copy.git"
+    "url": "git+https://github.com/maxmartynov/figma-plugin-just-copy-paste.git"
   },
   "bugs": {
-    "url": "https://github.com/jagtalon/figma-fast-copy/issues"
+    "url": "https://github.com/maxmartynov/figma-plugin-just-copy-paste/issues"
   },
-  "homepage": "https://github.com/jagtalon/figma-fast-copy#readme",
+  "homepage": "https://github.com/maxmartynov/figma-plugin-just-copy-paste/#readme",
   "devDependencies": {
     "babel-minify-webpack-plugin": "^0.3.1",
     "typescript": "^3.8.3",
