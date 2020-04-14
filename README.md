@@ -2,28 +2,54 @@
 
 # Just Copy & Paste &mdash; Figma Plugin
 
-This is a Figma plugin that allows to copy layers and paste
+This is a [Figma](figma.com) plugin that allows to copy layers and paste
 them at exactly the same position, no matter what layer was selected.
 This is an attempt to implement the default behavior how
 copy & paste works in Sketch, Photoshop, Adobe XD and etc.
 
 **Disclaimer:**
-There is no way for now to implement some of features to the full because of
+*There is no way for now to implement some of features to the full because of
 some Figma's API limitations. But Figma's team is working on new features and
-we will be able to get the plugin work like a charm.
+we will be able to get the plugin work like a charm soon.*
 
-## Usage
+
+
+## How To Use
 
 Just use this plugin as you usually do when copy & paste layers, but with the
-use the plugin's actions "Just Copy" and "Just Paste" from the menu or via
-shortcuts.
+use the plugin's commands `Just Copy` and `Just Paste` from the menu or via
+[recommend shortcuts](#recommend-shortcuts-macos).
 
-#### Recommend shortcuts (MacOS)
+For example:
+1. Select one or more layers on the canvas
+2. Run the `Just Copy` command
+3. Select a target layer next to which the copied layer should be pasted.
+The plugin will use the first selected layer as the target if multiple
+layers are selected.
+4. Run the `Just Paste` command
+
+
+### Demo
+
+`// TODO: add the demo`
+
+[<br><img src="img/demo.gif" width="200"/>](img/demo.gif)
+
+
+### Recommend shortcuts (MacOS)
+
+I recommend you the following ones:
+- **Copy:** `⌃⌘C` (Control + Command + C)
+- **Paste:** `⌃⌘V` (Control + Command + V)
+
+You can set them manually or automatically by running the script (MacOS only).
+
+##### Manually setup:
 1. Launch the `System Preferences`, and move to `Keyboard` -> `Shortcuts` -> `App Shortcuts`.
-[<br><img src="img/shortcut-preferences.step1.png" width="400"/>](img/shortcut-preferences.step1.png)
+[<br><img src="img/shortcut-preferences.step1.png" width="500"/>](img/shortcut-preferences.step1.png)
 
 2. Click the `+` button to add a new shortcut
-[<br><img src="img/shortcut-preferences.step2.png" width="400"/>](img/shortcut-preferences.step2.png)
+[<br><img src="img/shortcut-preferences.step2.png" width="500"/>](img/shortcut-preferences.step2.png)
 
 3. Set the shortcuts:
     - **Copy**
@@ -36,10 +62,21 @@ shortcuts.
         3. Keyboard Shortcut: `⌃⌘V` (Control + Command + V)
 
 
+##### Auto setup:
+Automatically set the default shortcuts by running
+the [script](bash/set-default-shortcuts.mac.sh) using the command below.
 
-## Demo
+**Info:** *(It will create a copy of your current settings in a local file
+to you will be able to revert the changes back if you need.)*
 
-// TODO: add the demo
+```
+sh ./bash/set-default-shortcuts.mac.sh
+```
+
+Revert back the shortcuts before running the top script:
+```
+sh ./bash/revert-shortcuts.mac.sh
+```
 
 
 
@@ -62,6 +99,14 @@ npm run watch
 Build for production
 ```
 npm run build
+```
+
+#### Bump the app version
+
+```
+npm run bump
+// or
+npm run patch
 ```
 
 

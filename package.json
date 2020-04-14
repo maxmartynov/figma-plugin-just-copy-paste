@@ -4,9 +4,12 @@
   "description": "A Figma plugin that pastes layers at exactly the same position, no matter what layer is selected.",
   "main": "dist/index.min.js",
   "scripts": {
-    "watch": "./node_modules/.bin/tsc --project tsconfig.json --watch src/*.js",
-    "minify": "./node_modules/.bin/webpack --config webpack.config.js",
-    "build": "./node_modules/.bin/tsc --build tsconfig.json && npm run minify"
+    "watch": "node_modules/.bin/tsc --watch --project tsconfig.json",
+    "minify": "node_modules/.bin/webpack --config webpack.config.js",
+    "build": "node_modules/.bin/tsc --build tsconfig.json && npm run minify",
+    "bump": "node_modules/.bin/bump prompt --tag --all --push --commit 'v%s'",
+    "patch": "node_modules/.bin/bump patch --tag --all --push --commit 'v%s'",
+    "preversion": "echo 'Building before bump...' && npm run build"
   },
   "keywords": [
     "figma",
@@ -27,6 +30,7 @@
   "devDependencies": {
     "babel-minify-webpack-plugin": "^0.3.1",
     "typescript": "^3.8.3",
+    "version-bump-prompt": "^6.0.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
