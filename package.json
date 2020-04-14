@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-just-copy-paste",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Figma plugin that pastes layers at exactly the same position, no matter what layer is selected.",
   "main": "dist/index.min.js",
   "scripts": {
