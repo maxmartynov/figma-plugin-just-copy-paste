@@ -38,13 +38,13 @@ layers are selected.
 
 ### Recommended shortcuts (MacOS)
 
-I recommend you the following ones:
+The plugin's developer recommend the following ones:
 - **Copy:** `⌃⌘C` (Control + Command + C)
 - **Paste:** `⌃⌘V` (Control + Command + V)
 
 You can set them manually or automatically by running the script (MacOS only).
 
-##### Manually setup:
+#### Manually setup:
 1. Launch the `System Preferences`, and move to `Keyboard` -> `Shortcuts` -> `App Shortcuts`.
 [<br><img src="img/shortcut-preferences.step1.png" width="500"/>](img/shortcut-preferences.step1.png)
 
@@ -62,7 +62,7 @@ You can set them manually or automatically by running the script (MacOS only).
         3. Keyboard Shortcut: `⌃⌘V` (Control + Command + V)
 
 
-##### Auto setup:
+#### Auto setup:
 Automatically set the default shortcuts by running
 the [script](bash/set-default-shortcuts.mac.sh) using the command below.
 
@@ -105,7 +105,7 @@ npm run build
 
 ```
 npm run bump
-// or
+# or
 npm run patch
 ```
 
