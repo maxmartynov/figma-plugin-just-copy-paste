@@ -4,8 +4,11 @@
 
 This is a [Figma](figma.com) plugin that allows to copy layers and paste
 them at exactly the same position, no matter what layer was selected.
-This is an attempt to implement the default behavior how
-copy & paste works in Sketch, Photoshop, Adobe XD and etc.
+This is an attempt to implement the default behavior how copy & paste
+works in Sketch, Photoshop, Adobe XD and etc.
+
+The copied layer should be pasted in the exact same location in relation to the Figma viewport. (Currently, the default Figma Paste behavior is to place the copied element in the same location in relation to the Frame that it's pasted in, rather than in relation to the viewport).
+- The pasted layer should be placed in the same Group/Frame as the selected layer.
 
 **Disclaimer:**
 *There is no way for now to implement some of features to the full because of
